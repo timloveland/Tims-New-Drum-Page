@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #212021;
+}
+
+/* NAV LINKS */
+.navLinks {
+  width: 100%;
+  height: 55px;
+  background: #212021;
+  position: fixed;
+  z-index: 10;
+}
+.navLinks ul {
+  display: block;
+  float: right;
+  padding: 2% 14%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navLinks li {
+  display: inline-block;
+  padding: 0 25px;
+}
+
+.navLinks a {
+  list-style: none;
+  text-decoration: none;
+  transition: 0.4s;
+  color: #fff
+}
+
+.navLinks a:hover {
+  color: red;
+}
+/* NAV LINKS */
+
+/* HOME PAGE */
+#home {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/roddybw.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.home-text {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-text h1 {
+  font-size: 102px;
+}
+
+#drum {
+  color: red;
+}
+
+.home-text p {
+  font-size: 30px;
+  margin-bottom: 55px;
+}
+
+.home-text a {
+  border: 3px solid #fff;
+  padding: 12px 38px;
+  border-radius: 25px;
+  color: #000;
+  background: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.home-text a:hover {
+  background: #000;
+  color: #fff;
+}
+/* END HOME PAGE */
+
+/* ABOUT PAGE */
+
+#about-me {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/best_shot.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.about-text {
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(77, 77, 77, 0.5);
+  padding: 50px 0;
+  border-radius: 20px;
+}
+
+.about-text h2 {
+  margin-bottom: 25px;
+  font-size: 34px;
+  color: #fff;
+}
+
+.about-text p {
+  color: #fff;
+}
+
+#red {
+  color: red;
+  font-weight: bold;
+}
+/* END ABOUT PAGE */
+
+/* CYMBALS page */
+#cymbals {
+  width: 100%;
+  margin: 5% 0;
+}
+
+.row {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+}
+
+.cymbals-col-left {
+  flex-basis: 48%
+}
+
+.cymbals-col-left img {
+  width: 100%;
+  height: 400px;
+}
+
+.col-left-group {
+  display: flex;
+  flex-basis: 45%;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.col-left-group img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.cymbals-col-right {
+  flex-basis: 48%;
+  margin-left: 45px;
+  color: #fff;
+}
+
+.cymbals-col-right h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.cymbals-col-right a {
+  color: #fff;
+}
+/* END CYMBALS PAGE */
+
+/* DRUM HEADS PAGE */
+#drum-heads {
+  margin: 10% auto;
+}
+
+.heads-col-left {
+  flex-basis: 48%;
+}
+
+.heads-col-left img {
+  width: 100%;
+}
+.heads-col-right {
+  flex-basis: 48%;
+  margin-left: 45px;
+  color: #fff;
+}
+
+.heads-col-right h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+/* END DRUM HEADS PAGE */
+
+/* STICKS PAGE */
+#sticks {
+  margin: 10% auto;
+}
+
+.sticks-col-left {
+  flex-basis: 48%;
+}
+
+.sticks-col-left img {
+  width: 100%;
+}
+
+.sticks-col-right {
+  flex-basis: 48%;
+  margin-left: 45px;
+  color: #fff;
+}
+
+.sticks-col-right h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+/* END STICKS SECTION */
+
+/* CHURCH SECTION */
+.church-col-left {
+  flex-basis: 48%;
+}
+
+.church-col-left img {
+  width: 100%;
+}
+
+.church-col-right {
+  flex-basis: 48%;
+  margin-left: 45px;
+  color: #fff;
+}
+
+.church-col-right h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.church-col-right a {
+  color: #fff;
+}
+/* END CHURCH SECTION */
+
+/*CONTACT SECTION */
+#contact h2 {
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+  margin: 45px 0;
+  font-size: 32px;
+}
+
+.contact-section {
+  width: 60%;
+  margin: 75px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.phone, .email {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.linkedin a, .github a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.fa-brands, .fa-solid {
+  font-size: 40px;
+  margin-right: 15px;
+}
+/* END CONTACT SECTION */
+
+footer {
+  height: 35px;
+  width: 100%;
+  background: #000;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#menuBtn {
+  display: none;
+}
+
+/* MEDIA for Phones */
+@media (max-width: 700px) {
+  .home-text h1 {
+    font-size: 32px;
+  }
+
+  .home-text p {
+    font-size: 24px;
+  }
+
+  .about-text {
+    width: 90%;
+    margin: auto;
+    margin-right: 45px;
+  }
+
+  .cymbals-col-left {
+    flex-basis: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .cymbals-col-left img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .col-left-group {
+    display: none;
+  }
+
+  .cymbals-col-right {
+    flex-basis: 100%;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    width: 80%;
+    gap: 12px;
+  }
+
+  #contact h2 {
+    margin-bottom: 25px;
+  }
+
+  #sideNav {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -200px;
+    top: 0;
+    background: #212021;
+    z-index: 2;
+    margin-top: 0;
+    transition: 1s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px auto;
+  }
+
+  #menuBtn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgba(33, 32, 33, 0.5);
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  #menuBtn img {
+    width: 20px;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
